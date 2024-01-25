@@ -1,0 +1,118 @@
+/*-------------------------------------------------------
+03. bsnav menu css
+---------------------------------------------------------*/
+
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .nav-link { 
+		color: var(--clr-heading); 
+		margin-right: 3rem;
+		font-size: 1.8rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		height: 90px;
+		line-height: 90px;
+		padding: 0;
+	}
+	
+	.navbar .nav-item:last-child .nav-link {
+		margin-right: 0;
+	}
+	
+	.navbar .dropdown-menu-end{ 
+		right:0;
+		left: auto;  
+	}
+	
+	.navbar .nav-item .dropdown-menu {  
+		display:block;
+		opacity: 0;
+		visibility: hidden;
+		transition:.3s;
+		margin-top:0;
+		padding: 1.5rem 2.5rem 2.5rem 2.5rem;
+		border: none;
+		border-radius: 0;
+	}
+	
+	.navbar .nav-item .dropdown-menu li {
+		margin-bottom: 1rem;
+	}
+	
+	.navbar .nav-item .dropdown-menu li:last-child {
+		margin-bottom: 0;
+	}
+	
+	.navbar .nav-item:hover .nav-link { 
+		color: var(--clr-def);   
+	}
+	
+	.navbar .dropdown-menu.fade-down{ 
+		top:80%;
+		transform: rotateX(-75deg);
+		transform-origin: 0% 0%; 
+	}
+	
+	.navbar .dropdown-menu.fade-up{ 
+		top:180%;
+	}
+	
+	.navbar .nav-item .dropdown-menu .dropdown-item {
+		font-size: 1.8rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	
+	.navbar .nav-item:hover .dropdown-menu{ 
+		transition: .3s;
+		opacity:1;
+		visibility:visible;
+		top: 100%;
+		transform: rotateX(0deg); 
+	}
+	
+}	
+
+/*Bootstrap menu*/
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar.fixed-top {
+	background-color: var(--clr-white);
+}
+
+.navbar .navbar-brand .logo-display {
+	display: block;
+}
+
+.navbar .navbar-brand .logo-scrolled {
+	display: none;
+}
+
+.navbar.fixed-top .navbar-brand .logo-display {
+	display: none;
+}
+
+.navbar.fixed-top .navbar-brand .logo-scrolled {
+	display: block;
+}
+
+button.navbar-toggler {
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+button.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+}

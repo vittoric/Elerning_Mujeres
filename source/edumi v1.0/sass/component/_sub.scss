@@ -1,0 +1,53 @@
+/*-------------------------------------------------------
+13. Subscribe css    
+---------------------------------------------------------*/
+
+.input-style-1 {
+    height: 60px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--clr-white);
+    background-color: transparent;
+    border: 3px solid var(--clr-white);
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    padding: 0 25px;
+}
+
+.input-style-1::placeholder {
+	color: var(--clr-white);
+	font-size: 1.6rem;
+	opacity: 1;
+}
+
+.btn-2 {
+	padding: 1rem 4rem;
+    text-transform: uppercase;
+    color: var(--clr-white);
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	border: 3px solid var(--clr-white);
+    background-color: var(--clr-def);
+	&::before {
+		@include btn-2;
+		top: 0;
+	}
+	&::after {
+		@include btn-2;
+		bottom: 0;
+	}
+	&:hover::before {
+		height: 50%;
+	}
+	&:hover::after {
+		height: 50%;
+	}
+	&:hover {
+		color: var(--clr-white);
+	}
+}
+

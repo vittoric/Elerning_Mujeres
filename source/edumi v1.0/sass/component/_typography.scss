@@ -1,0 +1,155 @@
+
+
+/*-------------------------------------------------------
+1. Typography css
+---------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+*, *:before, *:after {
+ 	box-sizing: inherit;
+}
+
+html,body {
+	height: auto;
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    font-size: 62.5%;
+	box-sizing:border-box;
+}
+
+body {
+	font-family: var(--font-1);
+	font-style: normal;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+	color: var(--clr-body);
+}
+
+a{
+    color: var(--clr-body);
+}
+
+a,
+a:active,
+a:focus,
+a:hover{
+    outline:none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+	text-decoration: none;
+}
+
+a:hover{
+    color: deeppink;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--clr-heading);
+    margin:0 0 1.5rem 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: var(--font-2);
+	line-height: 1.2;
+}
+
+h1{
+    font-size:48px;
+}
+
+h2{
+    font-size:36px;
+}
+
+h3{
+    font-size:30px;
+}
+
+h4{
+    font-size:24px;
+}
+
+h5{
+    font-size:18px;
+}
+
+h6{
+    font-size:14px;
+}
+
+p{
+	margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: var(--clr-heading);
+    line-height: 3.6rem;
+}
+
+.img,img{
+	max-width: 100%;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	height:auto;
+}
+
+hr {
+  padding: 0px;
+  border-bottom: 1px solid #eceff8;
+  border-top: 0px;
+}
+
+label {
+  color: #999;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+*::-moz-selection {
+  background: #d6b161;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #555;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #555;
+  color: #fff;
+  text-shadow: none;
+}
+
+*::-moz-placeholder {
+  color: #999;
+  font-size: 1.4rem;
+  opacity: .5;
+}
+
+*::placeholder {
+  color: #999;
+  font-size: 1.4rem;
+  opacity: .5;
+}

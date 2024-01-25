@@ -1,0 +1,85 @@
+
+/*-------------------------------------------------------
+06. Feature Css
+---------------------------------------------------------*/
+
+.feature-area {
+    position: relative;
+    .fet-shape {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.feature-box {
+	overflow: hidden;
+	.feature-pic {
+		@include pos-rel;
+		&::before {
+			position: absolute;
+			content: '';
+			bottom: -100%;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-image: -webkit-linear-gradient(bottom,$clr-black 0%,rgba(0,0,0,0)100%);
+			background-image: linear-gradient(bottom,$clr-black 0%,rgba(0,0,0,0)100%);
+			opacity: 0;
+			visibility: hidden;
+			-webkit-transition: .5s ease;
+			transition: .5s ease;
+		}
+		&::after {
+			position: absolute;
+			content: '';
+			background-image: url(assets/img/feature/bg.png);
+			bottom: 0;
+			left: 0;
+			height: 23rem;
+			width: 100%;
+			z-index: 1;
+		}
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+		.feature-ovr {
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+			justify-content: center;
+			position: absolute;
+			bottom: 3rem;
+			left: 0;
+			width: 100%;
+			z-index: 2;
+			i {
+				color: $clr-def;
+				font-size: 4rem;
+			}
+			.feature-ovr-tx {
+				line-height: 1;
+				h5 {
+					color: $clr-white;
+					line-height: 1;
+					margin-bottom: 5px;
+				}
+				span {
+					color: $clr-white;
+					line-height: 1;
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+	&:hover .feature-pic {
+		&::before {
+			bottom: 0;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+

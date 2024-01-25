@@ -1,0 +1,119 @@
+/*-------------------------------------------------------
+14. Feedback css    
+---------------------------------------------------------*/
+
+.feed {
+    position: relative;
+    .feed-shape {
+        position: absolute;
+        top: 0;
+        left: -20.8rem;
+        z-index: -1;
+    }
+}
+
+.feed-wpr.grid-px-2 {
+    grid-gap: 10rem;
+}
+
+.feed-left {
+	h2 {
+		font-size: 50px;
+		line-height: 1.4;
+	}
+}
+
+
+.feed-box {
+	position: relative;
+    border-radius: var(--rad-1);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1.732px 16px 0px rgba(0,0,0,.10);
+    padding: 4rem;
+	overflow: hidden;
+	.feed-shp {
+		position: absolute;
+		right: -49px;
+		top: 0;
+		i {
+			font-size: 12rem;
+			color: var(--clr-def);
+			opacity: .7;
+			display: inline-block;
+		}
+	}
+	.feed-author {
+		display: flex;
+		align-items: center;
+		gap: 3rem;
+		margin-bottom: 2.5rem;
+		.feed-auth-pic {
+			position: relative;
+			.feed-qoute {
+				position: absolute;
+				top: 20px;
+				left: -13px;
+				i {
+					height: 3rem;
+					width: 3rem;
+					line-height: 3rem;
+					text-align: center;
+					display: inline-block;
+					background-color: var(--clr-def);
+					color: var(--clr-white);
+					border-radius: 50%;
+					font-size: 1.4rem;
+				}
+			}
+		}
+		.feed-info  {
+			h4 {
+				text-transform: capitalize;
+				line-height: 1;
+				font-size: 2.2rem;
+				margin-bottom: 1rem;
+			}
+			span {
+				font-size: 2rem;
+				line-height: 1;
+				font-weight: 600;
+				display: inline-block;
+				color: var(--clr-heading);
+			}
+		}
+	}
+	p {
+		margin-bottom: 2.5rem;
+	}
+	.feed-rating {
+		display: flex;
+		align-items: center;
+		gap: 3px;
+		i {
+			font-size: 1.5rem;
+			color: var(--clr-def);
+		}
+	}
+}
+
+//owl carousel
+
+.feed-active.owl-theme .owl-dots .owl-dot span {
+    width: 2rem;
+    height: 5px;
+    margin: 0 7px;
+    background: var(--clr-def);
+    display: block;
+    border-radius: 30px;
+}
+
+.feed-active.owl-theme .owl-dots .owl-dot.active span,
+.feed-active.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--clr-black);
+}
+
+.feed-active.owl-carousel .owl-stage-outer {
+    padding: 2rem;
+    margin: 0rem -4rem 0rem 0;
+}
+

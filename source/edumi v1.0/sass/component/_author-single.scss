@@ -1,0 +1,126 @@
+/*-------------------------------------------------------
+23. Author Single css
+---------------------------------------------------------*/
+
+.author-list li {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--clr-heading);
+    font-family: var(--font-2);
+    font-size: 1.6rem;
+}
+
+.author-list li:last-child {
+	margin-bottom: 0;
+}
+
+.author-rating {
+    display: flex;
+}
+
+.author-rating p {
+	color: var(--clr-heading);
+    font-family: var(--font-2);
+	margin-right: 8px;
+	font-size: 1.6rem;
+	margin-bottom: 0;
+}
+
+.author-rating ul li {
+    display: inline-block;
+}
+
+.author-rating ul li i {
+	color: var(--clr-def);
+}
+
+.auhtor-con span {
+    margin-bottom: 1rem;
+    display: block;
+    color: var(--clr-heading);
+}
+
+.auhtor-pic img {
+    border-radius: 50%;
+    border: 13px solid #eee;
+    padding: 1.3rem;
+}
+
+.author-bio-wrapper {
+	-webkit-box-shadow: 0 3px 3rem rgba(139,139,139,.16);
+	box-shadow: 0 3px 3rem rgba(139,139,139,.16);
+	padding: 6rem;
+	background-color: var(--clr-white);
+}
+
+.auhtor-text p {
+    margin-bottom: 0;
+}
+
+.auhtor-text,
+.auhtor-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.author-contact-exp {
+    margin-top: 10rem;
+}
+
+.autor-contact {
+    .contact {
+        margin-bottom: 3rem;
+        ul{
+            display: flex;
+            gap: 1.5rem;
+            flex-direction: column;
+            li {
+                i {
+                    margin-right: 1rem;
+                    color: var(--clr-def);
+                }
+            }
+        }
+    }
+    .social {
+        ul {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            li {
+                i {
+                    color: var(--clr-white);
+                    height: 4rem;
+                    width: 4rem;
+                    line-height: 4rem;
+                    text-align: center;
+                    border-radius: 10px;
+                    background-color: var(--clr-def);
+                }
+            }
+        }
+    }    
+}
+
+.exp-box {
+    h4 {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+        font-weight: 600;
+    }
+    .exp {
+        margin-bottom: 3rem;
+        h5 {
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 8px;  
+        }
+        span {
+            
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

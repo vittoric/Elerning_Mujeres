@@ -1,0 +1,41 @@
+
+
+/*-------------------------------------------------------
+16. Subscribe css
+---------------------------------------------------------*/
+
+.contact-page-info.grid-2 {
+	grid-gap: 13rem;
+}
+
+.contact-left{
+	h2 {
+		line-height: 5.5rem;
+	}
+}
+
+.contact-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	li {
+		h5 {
+			line-height: 1;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+
+//Map
+
+
+.g-map-area {
+    height: 100vh;
+}
+
+.g-map--wrapper iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}

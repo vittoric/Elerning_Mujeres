@@ -1,0 +1,380 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+  Theme Name: Purposs - OnePage Business template
+  Author: Kazi Sahiduzzman
+  Description: Purposs is a lightweight Business Template.
+  Version: 1.0
+*/
+
+
+
+body,html{
+	height: 100%;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+ 	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 26px;
+	margin:0;
+	padding: 0;
+	background: #F3F6F8;
+}
+.img,img{
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+	height:100%;
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer-menu li a:hover {
+	color: #999;
+	text-decoration: none;
+}
+a, button {
+	color: #444;
+	outline: medium none;
+	font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: #222;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.h4, h4 {
+	font-size: 18px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+hr{
+	padding: 0px;
+	border-bottom: 1px solid #eceff8;
+	border-top: 0px;
+}
+label {
+	color: #444;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #555;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #555;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: .5;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: .5;
+}
+.de-padding{
+	padding: 200px 0 100px ;
+}
+.de-padding-bottom{
+	padding-bottom: 100px;
+}
+.mb-10 {
+	margin-bottom: 7rem;
+}
+.bg{
+	background: #f2f2f2;
+}
+
+.fix{overflow:hidden}
+
+/*Documentation css*/
+
+.header{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+}
+.header.single-head{
+	position: relative;
+}
+.header .bsnav {
+	background: transparent;
+	box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.04);
+}
+.header .bsnav.sticked.in {
+	background: #ffffff;
+	opacity: 1;
+}
+
+.main-navigation .navbar.bsnav-sticky .navbar-collapse ul li a {
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.header.single-head .main-navigation .navbar.bsnav-sticky .navbar-collapse ul li a {
+	color: #333;
+}
+
+.main-navigation .navbar.bsnav.sticked.in .navbar-collapse ul li a {
+	color: #333333;
+}
+
+.main-navigation .navbar.bsnav-sticky .navbar-collapse ul li.active a {
+	color: #E22A31;
+}
+
+.main-navigation .navbar.bsnav.sticked.in .navbar-collapse ul li.active a {
+	color: #E22A31;
+}
+
+.header.single-head .main-navigation .navbar.bsnav.sticked.in .navbar-collapse ul li.active a {
+	color: #333;
+}
+
+.main-navigation .navbar.bsnav-sticky img {
+	height: auto;
+	padding-top: 30px;
+}
+
+.main-navigation .navbar.bsnav-sticky a.navbar-brand {
+	padding: 5px 0;
+}
+
+/*Content css*/
+.item {
+	background: #fff;
+	padding: 50px;
+}
+.heading h1 {
+	font-size: 80px;
+	font-weight: 900;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+b, strong {
+	font-weight: 900;
+}
+.heading h4 {
+	font-weight: 600;
+}
+.alert-info {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+.heading {
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+.file-tree {
+	background-color: #fafafa;
+	margin: 24px 0;
+	padding: 20px 10px 10px;
+}
+.file-tree li {
+	line-height: 24px;
+	padding: 4px 0;
+}
+ol, ul {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+ul li{
+	margin-top: 0;
+	margin-bottom: 10px;
+	list-style: none;
+}
+ol li {
+	
+	margin-bottom: 10px;
+}
+code {
+	padding: 2px 4px;
+	font-size: 90%;
+	
+	background-color: #f9f2f4;
+	border-radius: 4px;
+}
+.item > h4 {
+	margin: 20px 0;
+}pre.line-numbers, pre.line-numbers > code {
+  position: relative;
+}
+.token.boolean, .token.constant, .token.deleted, .token.number, .token.property, .token.symbol, .token.tag {
+  color: #905;
+}
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {
+  color: #690;
+}
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {
+  color: #690;
+}
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+  color: #708090;
+}
+pre[class*="language-"][data-language]::before {
+  background-color: #cfcfcf;
+  border-radius: 0 0 0 5px;
+  color: #000;
+  content: attr(data-language);
+  display: inline-block;
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  position: absolute;
+  right: 0;
+  text-shadow: none;
+  top: 0;
+}
+pre[class*="language-"][data-language]::before {
+  display: none;
+}
+.clipboard-copy {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  padding: 4px 8px;
+  position: absolute;
+  right: 10px;
+  text-transform: uppercase;
+  top: 10px;
+  transition: opacity 0.2s ease-in-out 0s;
+  z-index: 4;
+}
+.file-tree {
+  background-color: #fafafa;
+  margin: 24px 0;
+  padding: 20px 10px 10px;
+}
+.file-tree ul {
+  list-style: outside none none;
+  padding-left: 25px;
+}
+.file-tree li {
+  line-height: 24px;
+  padding: 4px 0;
+}
+.file-tree i {
+    color: #b4b7b8;
+    cursor: default;
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 20px;
+    margin-left: 24px;
+    transition: color 0.4s ease 0s;
+}
+.file-tree li:hover > i {
+    color: #697376;
+}
+.file-tree .is-folder > span {
+    cursor: pointer;
+    display: inline-block;
+    font-family: Montserrat,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    min-width: 120px;
+}
+.file-tree .is-folder > span::before {
+    color: #8b949e;
+	font-family: 'Font Awesome\ 5 Free';
+	content: "\f07b"; /* FontAwesome Unicode */
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 8px;
+    width: 18px;
+}
+.file-tree .is-folder.open > span::before {
+	font-family: 'Font Awesome\ 5 Free';
+    content: "\f07c";
+}
+.file-tree .is-folder.open > ul {
+    display: block;
+}
+.file-tree .is-file > span {
+    display: inline-block;
+    min-width: 120px;
+}
+.file-tree .is-file > span::before {
+    color: #bec7d2;
+    font-family: 'Font Awesome\ 5 Free';
+	content: "\f15b"; /* FontAwesome Unicode */
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 8px;
+    width: 18px;
+}
+.item > h4 {
+  margin: 20px 0;
+}
+.item h2 {
+  margin: 30px 0;
+}
+img {
+  margin-bottom: 30px;
+}
+#intro .item strong {
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

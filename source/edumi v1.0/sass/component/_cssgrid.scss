@@ -1,0 +1,29 @@
+
+
+.grid-2 {
+	display: grid;
+	grid-gap: 3rem;
+	grid-template-columns: repeat(2,1fr);
+}
+
+.grid-3 {
+	display: grid;
+	grid-gap: 3rem;
+	grid-template-columns: repeat(3,1fr);
+}
+
+.grid-4 {
+	display: grid;
+	grid-gap: 3rem;
+	grid-template-columns: repeat(4,1fr);
+}
+
+.grid-px-2 {
+	display: grid;
+	grid-gap: 3rem;
+	grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+}
+
+.gap-0 {
+	grid-gap: 0;
+}

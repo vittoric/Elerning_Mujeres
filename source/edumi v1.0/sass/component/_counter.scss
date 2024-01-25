@@ -1,0 +1,65 @@
+
+/*-------------------------------------------------------
+7. Counter css 
+---------------------------------------------------------*/
+
+.counter-area {
+	position: relative;
+    z-index: 2;
+	&::before {
+		position: absolute;
+		content: '';
+		background-image: url(assets/img/header/2440x1578.png);
+		top: 0;
+		left: 0;
+		height: 65%;
+		width: 100%;
+		z-index: -1;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top left;
+	}
+	&::after {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		height: 65%;
+		width: 100%;
+		z-index: -1;
+		background-color: rgba(0,0,0,.8);
+	}
+}
+
+.counter-wpr {
+    padding: 6rem;
+    border-radius: var(--rad-1);
+    background-color: var(--clr-def);
+}
+
+.fun-fact {
+	.fun-icon {
+		i {
+			font-size: 5rem;
+			color: var(--clr-white);
+		}
+	}
+	.fun-desc {
+		.timer {
+			font-size: 5rem;
+			margin: 3rem 0 0 0;
+			display: inline-block;
+			color: var(--clr-white);
+			border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+			padding-bottom: 10px;
+			font-weight: 500;
+		}
+		.medium {
+			font-size: 18px;
+			margin-left: 1.5rem;
+			color: var(--clr-white);
+			font-weight: 500;
+		}
+	}
+}
+

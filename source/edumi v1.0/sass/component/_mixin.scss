@@ -1,0 +1,66 @@
+
+
+/*-------------------------------------------------------
+02. Mixins Css
+---------------------------------------------------------*/
+
+@mixin pos-rel {
+	position: relative;
+	z-index: 1;
+}
+
+@mixin pos-abs {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	content: '';
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+//btn 2
+
+@mixin btn-2 {
+	position: absolute;
+	content: '';
+	background-color: var(--clr-black);
+	height: 0%;
+	width: 100%;
+	left: 0;
+	transition: all .5s ease;
+	z-index: -1;
+	opacity: .5;
+}
+
+@minxin hero-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+}
+
+//Header Top List
+
+@mixin top-sty {
+    color:  var(--clr-white);
+    font-size: 1.8rem;
+    font-weight: 500; 
+}
+
+@mixin hero {
+    height: 850px;
+    max-height: 850px;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

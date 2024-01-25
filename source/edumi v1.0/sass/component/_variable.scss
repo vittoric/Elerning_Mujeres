@@ -1,0 +1,60 @@
+
+//#E7B144 #2C2C5E font-family: 'Crimson Text', serif;
+//font-family: 'Jost', sans-serif;
+
+
+:root {
+	--clr-heading: #222222;
+	--clr-body: #818790;
+	--clr-bg: #F9F8F8;
+	--clr-def: #f65868;
+	--clr-def-2: #b43608;
+	--clr-ftr: #1f1f1f;
+	--clr-ftr-2: #666666;
+	--clr-ftr-3: #323232;
+	--clr-white: #fff;
+	--clr-black: #000;
+	--font-1: 'Crimson Text', serif;
+	--font-2: 'Jost', sans-serif;
+	--rad-1: 1.5rem;
+    --clr-grad-1: linear-gradient(to right, var(--clr-def), var(--clr-def-2));
+}
+
+$clr-heading: #222222;
+$clr-body: #818790;
+$clr-bg: #F9F8F8;
+$clr-def: #f65868;
+$clr-def-2: #b43608;
+$clr-ftr: #1f1f1f;
+$clr-ftr-2: #666666;
+$clr-ftr-3: #323232;
+$clr-white: #fff;
+$clr-black: #000;
+$font-1: 'Crimson Text', serif;
+$font-2: 'Jost', sans-serif;
+$rad-1: 1.5rem;
+$bg: linear-gradient(
+	312deg ,
+	rgba(237, 32, 36, 1) 0%,
+	rgba(211, 63, 164, 1) 35%,
+	rgba(186, 80, 148, 1) 100%
+);
+$bg2:linear-gradient(
+	90deg,
+	rgba(237, 32, 36, 1) 0%,
+	rgba(211, 63, 164, 1) 35%,
+	rgba(186, 80, 148, 1) 100%
+);
+$bg3:linear-gradient(
+	15deg,
+	rgba(255, 244, 0, 1) 0%,
+	rgba(255, 211, 0, 1) 100%
+); 
+$bg4:-webkit-linear-gradient(
+	bottom,
+	#000000 0%,
+	rgba(0, 0, 0, 0) 50%
+);
+	
+	
+

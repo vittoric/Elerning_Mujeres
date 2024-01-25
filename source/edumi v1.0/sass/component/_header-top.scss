@@ -1,0 +1,27 @@
+/*-------------------------------------------------------
+08. Hero css 
+---------------------------------------------------------*/
+
+.header-top {
+}
+
+.header-top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top-list {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    li {
+        @include top-sty;
+        a {
+            @include top-sty;
+        }
+        i {
+           margin-right: 1rem; 
+        }
+    }
+}

@@ -1,0 +1,37 @@
+
+/*-------------------------------------------------------
+20. Breadcrumb css 
+---------------------------------------------------------*/
+
+
+.main-404-wrapper.grid-2 {
+    align-items: center;
+    height: 100vh;
+}
+
+.main-404-btn {
+	display: flex;
+}
+
+.main-404-btn a {
+	align-self: flex-start;
+	font-family: var(--font-family-5);
+	font-weight: 700;
+}
+
+.main-404-right span {
+    display: block;
+    font-size: 15rem;
+    line-height: 1;
+    font-family: var(--font-family-5);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.main-404-right p {
+    margin-bottom: 3rem;
+    font-family: var(--font-family-5);
+    font-size: 3rem;
+    line-height: 1.3;
+}
+

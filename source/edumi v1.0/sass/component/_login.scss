@@ -1,0 +1,54 @@
+/*-------------------------------------------------------
+21. Login css
+---------------------------------------------------------*/
+
+.login-btns {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    .form-check {
+        display: flex;
+        min-height: inherit;
+        padding-left: 1.5em;
+        margin-bottom: 0;
+        align-items: center;
+        gap: 1rem;
+        line-height: 1;
+    }
+    .form-check-label {
+        color: var(--clr-heading);
+        font-size: 2rem;
+    }
+}
+
+.form-check  {
+    .form-check-input {
+        float: left;
+        margin-left: -1.5em;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.login-title {
+    font-weight: 600;
+    font-size: 2.6rem;
+}
+
+.form-check-input:checked {
+    background-color: var(--clr-def);
+    border-color: var(--clr-def);
+}
+
+.login-form {
+    padding: 7rem 6rem;
+    background-color: var(--clr-white);
+    border-radius: var(--rad-1);
+    border: 1px solid #ccc;
+    .input-style-2 {
+        background-color: #f7f7f7;
+        font-size: 2rem;
+    }
+}

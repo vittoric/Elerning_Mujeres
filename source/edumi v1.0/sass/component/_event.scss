@@ -1,0 +1,103 @@
+/*-------------------------------------------------------
+9. Promotion css 
+---------------------------------------------------------*/
+
+.event-wpr.grid-2 {
+    grid-gap: 8rem;
+}
+
+.event-box {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+	border-bottom: 2px solid #ddd;
+    padding-bottom: 8rem;
+    margin-bottom: 1rem;
+	.event-info  {
+		h4 {
+			text-transform: capitalize;
+			font-weight: 500;
+			margin-bottom: 2rem;
+			a {
+				color: var(--clr-heading);
+			}
+		}
+		ul {
+			display: flex;
+			gap: 2rem;
+			align-items: center;
+			margin-bottom: 2.5rem;
+			line-height: 1;
+			li {
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+                color: var(--clr-heading);
+                font-weight: 600;
+                line-height: 1;
+				i {
+					margin-right: 6px;
+                    margin-top: -6px;
+                    color: var(--clr-def);
+				}
+			}
+		}
+        p {
+            color: var(--clr-heading);
+        }
+	}
+}
+
+.event-date {
+    width: 320px;
+    -webkit-border-radius: var(--rad-1);
+    border-radius: var(--rad-1);
+    background-color: var(--clr-white);
+    box-shadow: 1px 1.732px 40px 0px rgba(0, 0, 0,.08);
+    text-align: center;
+    padding: 3rem 3rem 4rem 3rem;
+    position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	h3 {
+		margin-bottom: 0;
+		position: absolute;
+		color: var(--clr-def);
+		font-size: 3.5rem;
+		top: -25px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		background-color: #FFF;
+		height: 8rem;
+		width: 8rem;
+		line-height: 8.3rem;
+		text-align: center;
+		-webkit-box-shadow: 1px 1.732px 40px 0px rgba(0, 0, 0,.08);
+		box-shadow: 1px 1.732px 40px 0px rgba(0, 0, 0,.08);
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		
+	}
+	h5 {
+		margin-bottom: 0;
+		margin-top: 4.5rem;
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
+	&::before {
+        position: absolute;
+        content: "";
+        width: 80%;
+        height: 80%;
+        left: 18px;
+        border: 2px dashed var(--clr-def);
+        -webkit-border-radius: var(--rad-1);
+        border-radius: var(--rad-1);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+	}
+}
+

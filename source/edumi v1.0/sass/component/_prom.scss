@@ -1,0 +1,96 @@
+/*-------------------------------------------------------
+8. Promotion css 
+---------------------------------------------------------*/
+
+.prom-area {
+    position: relative;
+    z-index: 1;
+}
+
+.shape-pencil {
+    position: absolute;
+    height: 45rem;
+    width: 70rem;
+    z-index: -1;
+    top: -227px;
+    right: -349px;
+    opacity: .256;
+}
+
+.prom-left-pic {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: '';
+        height: 40rem;
+        width: 40rem;
+        background-color: var(--clr-def);
+        border-radius: 50%;
+        z-index: -1;
+        bottom: 20px;
+        left: -230px;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        height: 51.2rem;
+        width: 51.2rem;
+        background-image: url(assets/img/dot/dot.png);
+        border-radius: 50%;
+        z-index: -1;
+        top: -60px;
+        left: -200px;
+    }
+}
+
+.prom-right  {
+	h2 {
+		margin-bottom: 4rem;
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+	.prom-right-txt {
+		margin-bottom: 0;
+		padding: 3rem;
+		border-radius: var(--rad-1);
+		border-bottom: 2px solid var(--clr-def);
+		-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0 , .10);
+		box-shadow: 0px 0px 15px rgba(0, 0, 0 , .10);
+	}
+}
+
+.prom-opt  {
+	margin-top: 4rem;
+	ul {
+		display: flex;
+		gap: 3rem;
+		align-items: center;
+	}
+}
+
+
+.prom-info {
+	text-align: center;
+	i {
+		font-size: 3rem;
+		height: 8rem;
+		width: 8rem;
+		text-align: center;
+		line-height: 7rem;
+		border: 5px solid var(--clr-def);
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		display: inline-block;
+		color: var(--clr-def);
+		margin-bottom: 2.6rem;
+	}
+	.prom-txt {
+		h5 {
+			
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,112 @@
+
+/*-------------------------------------------------------
+11. Categories css
+---------------------------------------------------------*/
+
+
+.cate-area {
+    position: relative;
+    z-index: 1;
+    .cate-shp {
+        .s-1 {
+            position: absolute;
+            content: '';
+            height: 40rem;
+            width: 40rem;
+            background-color: var(--clr-def);
+            border-radius: 50%;
+            z-index: -1;
+            top: -60px;
+            left: -80px;
+        }
+        img {
+            position: absolute;
+            top: 60px;
+            left: -60px;
+        }
+    }
+}
+
+.cate-box {
+	text-align: center;
+	padding: 5rem 3rem;
+	background-color: var(--clr-white);
+	box-shadow: 0 0 7px rgba(0, 0, 0, .07);
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+    border: 1px solid #ccc;
+	&::before {
+        position: absolute;
+        z-index: -1;
+        background-color: var(--clr-bg);
+        content: '';
+        bottom: -235px;
+        left: 70px;
+        width: 28rem;
+        height: 28rem;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        opacity: 1;
+	}
+	.cate-icon {
+		margin-bottom: 2.5rem;
+		i {
+			font-size: 5rem;
+			display: inline-block;
+			color: var(--clr-def);
+		}
+	}
+	.cate-info {
+		h4 {
+			line-height: 1.2;
+			margin-bottom: 1rem;
+			text-transform: capitalize;
+			font-size: 2.2rem;
+		}
+		span {
+			display: inline-block;
+			line-height: 1;
+			font-size: 1.6rem;
+			font-family: var(--font-2);
+            color: var(--clr-heading);
+		}
+	}
+}
+
+//Cate gory 2
+
+.cate-2-box {
+    border: 1px solid #ccc;
+    padding: 3rem;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .07);
+    text-align: center;
+    .cate-2-icon {
+        margin-bottom: 3rem;
+        i {
+            height: 9rem;
+            width: 9rem;
+            line-height: 9rem;
+            text-align: center;
+            display: inline-block;
+            font-size: 3.5rem;
+            background-image: linear-gradient(to right, var(--clr-def), var(--clr-def-2));
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            color: var(--clr-white);
+        }
+    }
+    .cate-2-info {
+        h3 {
+            margin-bottom: 2rem;
+            font-weight: 600;
+            font-size: 2.6rem;
+        }
+        p{
+           margin-bottom: 2rem; 
+        }
+    }
+}
+
+.cate-2-icon i {
+    
+}

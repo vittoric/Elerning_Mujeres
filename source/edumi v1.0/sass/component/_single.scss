@@ -1,0 +1,170 @@
+
+/*-------------------------------------------------------
+21. Blog Single css
+---------------------------------------------------------*/
+
+
+.single-page-info {
+    display: grid;
+    grid-template-columns:  1fr 37.3rem;
+    grid-gap: 3rem;
+	&.snp {
+		grid-gap: 13rem;
+	}
+	
+}
+
+.single-area {
+    .g-5, .gx-5 {
+        --bs-gutter-x: 6rem;
+    }
+}
+
+.blog-single-pic {
+	margin-bottom: 6rem;
+	display: block;
+}
+
+.blog-single-info {
+	.blog-single-header {
+		.blog-single-title {
+            font-weight: 600;
+            margin-bottom: 3rem;
+            line-height: 1.5;
+            font-size: 3rem;
+		}
+		.blog-single-meta {
+			display: flex;
+			align-items: center;
+			gap: 3rem;
+			border-bottom: 1px solid rgb(234, 234, 234);
+			padding-bottom: 1.3rem;
+			li{
+				i {
+					margin-right: 1rem;
+				}
+				&:first-child  {
+					i {
+						color: #2878eb;
+					}
+				}
+				&:nth-child(2) {
+					i {
+						color: #f14d5d;
+					}
+				}
+				&:nth-child(3)  {
+					i {
+						color: #00d2ff;
+					}
+				}
+				&:nth-child(4)  {
+					i {
+						color: #f14d5d;
+					}
+				}
+				&:nth-child(5)  {
+					i {
+						color: #1a01ff;
+					}
+				}
+			}
+		}
+	}
+	
+	.blog-tag-links {
+		gap: 2rem;
+	}
+	
+	.blog-single-nxt-prev {
+		display: flex;
+		gap: 1.5rem;
+		a {
+			i {
+				-webkit-border-radius: 50%;
+				border-radius: 50%;
+				width: 70px;
+				height: 70px;
+				line-height: 70px;
+				background-color: var(--clr-def);
+				text-align: center;
+				color: var(--clr-white);
+				display: inline-block;
+				font-size: 3rem;
+			}
+			&:last-child {
+				i {
+					background-color: #f14d5d;
+				}
+			}
+		}
+	}
+	.blog-single-comment {
+		.blog-single-single {
+			display: grid;
+			grid-template-columns: 10rem 1fr;
+			grid-gap: 4rem;
+			align-items: center;
+			margin-bottom: 3rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			.blog-single-single-bio { 
+				h5 {
+					font-weight: 500;
+					.reply {
+						color: var(--clr-body);
+						font-size: 1.6rem;
+						font-weight: 400;
+					}
+				}
+				span {
+					display: block;
+					margin-bottom: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+
+
+//Blog User Input
+
+
+
+.input-style-2 {
+	padding: 2.1rem 2rem;
+	border: 1px solid rgb(234, 234, 234);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	outline: none;
+	line-height: 1;
+	&::placeholder {
+		font-size: 1.6rem;
+		color: #787781;
+		opacity: 1;
+	}
+}
+
+
+
+textarea.input-style-2 {
+	height: 15rem!important;
+}
+
+button.theme-btn {
+	border: none;
+}
+
+.single-user-title {
+	font-weight: 500;
+	margin-bottom: 6rem;
+}
+
+.b-qoute {
+	padding: 3rem 6rem;
+	font-style: italic;
+	border: 1px solid rgb(234, 234, 234);
+}
+

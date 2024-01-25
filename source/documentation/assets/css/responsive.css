@@ -1,0 +1,88 @@
+/*================================ 
+    #RESPONSIVE CSS 
+====================================*/
+
+/* Tablet Layout: 768px.*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.portfolio-area .pf-item {
+		width: 50%;
+	}
+	.about-area .about-img-area {
+		text-align: center!important;
+	}
+	
+	.card-deck .card {
+		-ms-flex: 1 0 0%;
+		flex: 1 0 40%;
+	}
+}
+
+/* lg Layout: 992px.*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.about-area .about-img-area {
+		text-align: center!important;
+	}
+	
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+	.hero-area .content h1 {
+		font-size: 30px;
+		margin-top: 50px;
+		margin-bottom: 0;
+		line-height: 50px;
+	}
+	.hero-area .content p {
+		color: #fff;
+		padding-bottom: 20px;
+		margin-bottom: 0;
+		padding-top: 10px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.hero-area .content a {
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+	.about-area .about-img-area {
+		text-align: center!important;
+	}
+	.portfolio-area .pf-item {
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	footer .footer-content span {
+		font-size: 22px;
+	}
+	.section-header-text h2 {
+		font-size: 30px;
+	}
+	.header .bsnav {
+		background: #fff;
+	}
+	.navbar-nav .nav-item.active > .nav-link, .navbar-nav .nav-item:active:focus > .nav-link, .navbar-nav .nav-item:active > .nav-link, .navbar-nav .nav-item:focus > .nav-link, .navbar-nav .nav-item:hover > .nav-link {
+		color: #333;
+	}
+	.de-padding{
+		padding:50px 0 25px 0;
+	}
+	.portfolio-area{
+		padding:50px 0 32px 0;
+	}
+	.com-mr {
+		margin-left: 55px;
+	}
+	.single-area {
+		padding: 85px 0 0 0;
+		margin-bottom: -10px;
+	}
+	
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+}

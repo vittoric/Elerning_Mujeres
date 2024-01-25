@@ -1,0 +1,361 @@
+
+/*-------------------------------------------------------
+2. Theme Default css
+---------------------------------------------------------*/
+.ovr-hid {
+    overflow: hidden;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: url(assets/img/logo/pre-loader.gif) center no-repeat $clr-white;
+    text-align: center;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.h-100vh {
+	height: 100vh;
+}
+
+.bg {
+	background-color: var(--clr-bg);
+}
+
+.bg-2 {
+    background-image: linear-gradient(to right, var(--clr-def), var(--clr-def-2));
+}
+
+.bg-3 {
+    background-color: var(--clr-def);
+}
+
+/*Theme button css*/
+
+.site-title {
+	margin-bottom: 6rem;
+	h2 {
+		margin-bottom: 0;
+	}
+}
+
+.site-title.wh {
+	h2 {
+		color: var(--clr-white);
+	}
+}
+
+/*margins paddings*/
+
+.pb-140 {
+	padding-bottom: 14rem;
+}
+
+.pd-50 {
+	padding: 5rem 0;
+}
+
+.de-padding {
+    padding: 12rem 0;
+}
+
+.de-pt {
+	padding-top: 12rem;
+}
+
+.de-pb {
+	padding-bottom: 12rem;
+}
+
+.pt-0 {
+	padding-top: 0rem;
+}
+
+.pt-10 {
+	padding-top: 1rem;
+}
+
+.pt-20 {
+	padding-top: 2rem;
+}
+
+.pt-30 {
+	padding-top: 3rem;
+}
+
+.pt-40 {
+	padding-top: 4rem;
+}
+
+.pt-50 {
+	padding-top: 5rem;
+}
+
+.pt-60 {
+	padding-top: 6rem;
+}
+
+.pt-70 {
+	padding-top: 7rem;
+}
+
+.pt-80 {
+	padding-top: 8rem;
+}
+
+.pt-90 {
+	padding-top: 9rem;
+}
+
+.pt-100 {
+	padding-top: 10rem;
+}
+
+.pb-0 {
+	padding-bottom: 0rem;
+}
+
+.pb-10 {
+	padding-bottom: 1rem;
+}
+
+.pb-20 {
+	padding-bottom: 2rem;
+}
+
+.pb-30 {
+	padding-bottom: 3rem;
+}
+
+.pb-40 {
+	padding-bottom: 4rem;
+}
+
+.pb-50 {
+	padding-bottom: 5rem;
+}
+
+.pb-60 {
+	padding-bottom: 6rem;
+}
+
+.pb-70 {
+	padding-bottom: 7rem;
+}
+
+.pb-80 {
+	padding-bottom: 8rem;
+}
+
+.pb-90 {
+	padding-bottom: 9rem;
+}
+
+.pb-100 {
+	padding-bottom: 10rem;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+.mt-10 {
+	margin-top: 1rem;
+}
+
+.mt-20 {
+	margin-top: 2rem;
+}
+
+.mt-30 {
+	margin-top: 3rem;
+}
+
+.mt-40 {
+	margin-bottom: 4rem;
+}
+
+.mt-50 {
+	margin-bottom: 5rem;
+}
+
+.mt-60 {
+	margin-top: 6rem;
+}
+
+.mt-70 {
+	margin-top: 7rem;
+}
+
+.mt-80 {
+	margin-top: 8rem;
+}
+
+.mt-90 {
+	margin-top: 9rem;
+}
+
+.mt-100 {
+	margin-top: 10rem;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.mb-10 {
+	margin-bottom: 1rem;
+}
+
+.mb-20 {
+	margin-bottom: 2rem;
+}
+
+.mb-30 {
+	margin-bottom: 3rem;
+}
+
+.mb-40 {
+	margin-bottom: 4rem;
+}
+
+.mb-50 {
+	margin-bottom: 5rem;
+}
+
+.mb-60 {
+	margin-bottom: 6rem;
+}
+
+.mb-70 {
+	margin-bottom: 7rem;
+}
+
+.mb-80 {
+	margin-bottom: 8rem;
+}
+
+.mb-90 {
+	margin-bottom: 9rem;
+}
+
+.mb-100 {
+	margin-bottom: 10rem;
+}
+
+.pos-rel {
+	position: relative;
+	z-index: 1;
+}
+
+/*Theme Button*/
+
+.tm-btn {
+	padding: 2rem 4rem;
+	border: 1px solid #eee;
+	font-weight: 600;
+	font-size: 1.6rem;
+	line-height: 1;
+	color: $clr-heading;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-transform: capitalize;
+}
+
+//Custom Container
+
+@media (min-width: 1200px) {
+	.container-custom {
+		max-width: 1800px;
+		margin: 0 auto;
+		padding-right: 6rem;
+		padding-left: 6rem;
+		width: 100%;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container,
+	.container-lg, 
+	.container-md, 
+	.container-sm, 
+	.container-xl,
+	.container-xxl {
+		max-width: 1194px;
+	}
+}
+
+@media (min-width: 1400px) {
+    .main-2 {
+        .container,
+        .container-lg, 
+        .container-md, 
+        .container-sm, 
+        .container-xl,
+        .container-xxl {
+            max-width: 1394px;
+        }
+    }
+}
+
+//Button 
+
+@mixin btn-i {
+    padding: 2rem 4rem;
+    line-height: 1;
+    color: var(--clr-white);
+    outline: none;
+    font-weight: 600;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    
+}
+
+.btn-4 {
+    background-color: var(--clr-def);
+    border: none; 
+}
+
+.btn-5 {
+    background-image: linear-gradient(to right, var(--clr-def), var(--clr-def-2));
+    border: none; 
+}
+
+.btn-4,
+.btn-5 {
+    @include btn-i;
+    &::before {
+    position: absolute;
+    content: '';
+    background-color: var(--clr-black);
+    border: none;
+    height: 0;
+    width: 102%;
+    top: 0;
+    left: 0;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    z-index: -1;
+    visibility: hidden;
+    }
+    &:hover::before {
+        height: 102%;
+        visibility: visible;
+    }
+}
